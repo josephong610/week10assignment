@@ -1,9 +1,11 @@
 # Week 10 Major Assignment
 
-## 📘 Overview
-This project implements an **ETL (Extract, Transform, Load)** pipeline using **Apache Airflow** to process and analyze two related datasets:  
+## Overview
+This assignment implements the ETL pipeline using Apache Airflow to process and analyze two related datasets in the airflow-etl folder:  
 - `movies.csv` — metadata about movies (ID, title, release year)  
-- `ratings.csv` — user ratings for those movies  
+- `ratings.csv` — user ratings for those movies
+
+(I just created these datasets and populated them with data for this project)
 
 The pipeline runs daily and performs the following stages:
 1. **Extract & Load** raw data into PostgreSQL staging tables.  
@@ -84,7 +86,7 @@ Two parallel tasks load CSV data into PostgreSQL staging tables:
 
 ---
 
-## How to Run
+## Running Process
 
 1. **Start Airflow containers**
    ```bash
@@ -120,3 +122,7 @@ This Airflow DAG demonstrates an end-to-end ETL pipeline:
 - **PostgreSQL integration** ensures reliable data management.  
 - **PythonOperators** handle data transformation and visualization seamlessly.  
 - **Automated validation and cleanup** maintain data quality and system hygiene.
+
+## Screenshots
+![DAG Graph View](dag_successful_screenshot.png)
+![Successful Run](Successful_screenshot.png)
