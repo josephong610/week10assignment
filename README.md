@@ -116,13 +116,6 @@ All temporary resources are automatically cleaned up at the end of the DAG:
 
 ---
 
-## Summary
-This Airflow DAG demonstrates an end-to-end ETL pipeline:
-- **Parallel ingestion** improves efficiency.  
-- **PostgreSQL integration** ensures reliable data management.  
-- **PythonOperators** handle data transformation and visualization seamlessly.  
-- **Automated validation and cleanup** maintain data quality and system hygiene.
-
 ## Screenshots
 ![DAG Graph View](dag_successful_screenshot.png)
 ![Successful Run](Successful_screenshot.png)
