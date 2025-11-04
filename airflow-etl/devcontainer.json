@@ -1,0 +1,12 @@
+{
+  "name": "Airflow ETL",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "airflow-webserver",
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "stopCompose",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python", "ms-azuretools.vscode-docker"]
+    }
+  }
+}
