@@ -5,7 +5,7 @@ This assignment implements the ETL pipeline using Apache Airflow to process and 
 - `movies.csv` — metadata about movies (ID, title, release year)  
 - `ratings.csv` — user ratings for those movies
 
-(I just created these datasets and populated them with data for this project)
+(I just created these datasets and populated them with data for this project. Also all of the code is in the airflow-etl folder.)
 
 The pipeline runs daily and performs the following stages:
 1. **Extract & Load** raw data into PostgreSQL staging tables.  
